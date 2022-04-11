@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style-type: none;
+}
+/* ==============================
+common css ends
+=============================== */
+nav {
+  height: 50px;
+  background: #dddddd;
+}
+nav .nav-content {
+  width: 1170px;
+  height: 100%;
+  background: #dddddd;
+  margin: 0 auto;
+  display: flex;
+}
+nav .nav-content .logo {
+  width: 170px;
+  height: 100%;
+  background: #f19898;
+}
+nav .nav-content .list {
+  width: 1000px;
+  height: 100%;
+  background: #aaf1b9;
+}
+nav .nav-content .list ul {
+  display: flex;
+  justify-content: end;
+}
+nav .nav-content .list ul li a {
+  font-size: 16px;
+  color: #000000;
+  text-transform: capitalize;
+  line-height: 50px;
+  padding: 0 20px;
+  display: block;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  position: relative;
+  z-index: 1;
+}
+nav .nav-content .list ul li a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  height: 100%;
+  background: #000000;
+  z-index: -1;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+nav .nav-content .list ul li a:hover {
+  color: #e25e38;
+}
+nav .nav-content .list ul li a:hover::before {
+  width: 100%;
+}
+.cta-btn {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
+  border: 1px solid #69e994;
+  text-transform: uppercase;
+  color: #69e994;
+  position: relative;
+  z-index: 1;
+}
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  height: 100%;
+  background: #000000;
+  z-index: -1;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.cta-btn:hover::before {
+  width: 100%;
+}
